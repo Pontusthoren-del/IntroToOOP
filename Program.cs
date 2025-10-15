@@ -18,8 +18,8 @@
         }
         static void PrintTriangle()
         {
-            Triangle t = new Triangle();
-            t.CalculateTriangle();
+            Triangle triangle = new Triangle();
+            triangle.CalculateTriangle();
         }
         static void Main(string[] args)
         {

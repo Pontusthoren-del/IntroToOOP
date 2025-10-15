@@ -9,28 +9,38 @@ namespace IntroToOOP
 {
     internal class Triangle
     {
+        public double Base { get; set; }
+        public double Height { get; set; }
 
+        public Triangle(double baseLenght, double height)
+        {
+            Base = baseLenght;
+            Height = height;
+        }
+        public Triangle()
+        {
+
+        }
+        public double GetTriangleArea()
+        {
+            return (Base * Height) / 2;
+        }
         public void CalculateTriangle()
         {
-            double side1;
-            double side2;
-            //double angle;
-
             Console.WriteLine();
             Console.Write("Skriv in triangels bas: ");
-            side1 = Convert.ToDouble(Console.ReadLine());
+            Base = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine();
             Console.Write("Skriv in triangelns höjd: ");
-            side2 = Convert.ToDouble(Console.ReadLine());
-
-            //Console.Write("Skriv in trianglens vinkel: ");
-            //angle = Convert.ToDouble(Console.ReadLine());
-
-            //double angleRadians = angle * Math.PI / 180;
-
-            double area = side1 * side2 / 2;
+            Height = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine();
-            Console.WriteLine($"Triangelns area är: {area}");
+            Console.WriteLine($"Triangelns area är: {GetTriangleArea()}");
         }
     }
 }
+
+//double angle;
+//Console.Write("Skriv in trianglens vinkel: ");
+//angle = Convert.ToDouble(Console.ReadLine());
+
+//double angleRadians = angle * Math.PI / 180;
