@@ -10,8 +10,10 @@ namespace IntroToOOP
     internal class Triangle
     {
         public double Base { get; set; }
+
         public double Height { get; set; }
 
+        //Om man skulle använda fasta värden.
         public Triangle(double baseLenght, double height)
         {
             Base = baseLenght;
