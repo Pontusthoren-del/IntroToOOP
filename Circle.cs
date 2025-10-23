@@ -9,16 +9,16 @@ namespace IntroToOOP
     internal class Circle
     {
         static float _pi = 3.141f;
-        public int Radius;
+        public int radius;
 
-        public Circle(int radius) 
+        public Circle(int Radius) 
         {
-            Radius = radius;
+            radius = Radius;
         }
 
         public float GetArea()
         {
-            return _pi * Radius * Radius;
+            return _pi * radius * radius;
         }
 
         public void Volume()
